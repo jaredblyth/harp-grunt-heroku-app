@@ -1,0 +1,1 @@
+console.log('sample of console log line - this should be automatically removed by grunt');

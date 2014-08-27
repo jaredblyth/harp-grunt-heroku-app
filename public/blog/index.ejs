@@ -1,0 +1,13 @@
+<h1>Blog Posts</h1>
+
+<% function excerpt(content) { %>
+  <% return content.split("<!-- more -->")[0]; %>
+<% } %>
+
+<% for(var slug in public.blog._data){ %>
+    <h2><a href="/blog/<%= slug %>.html"><%= public.blog._data[slug].title %></a></h2>
+    <div class="subMeta">
+        Posted: <%= public.blog._data[slug].date %>
+    </div>
+    <%- excerpt(partial(slug)) %>
+<% }; %>

@@ -1,0 +1,14 @@
+{
+    "": {
+        "pageTitle": "Home",
+        "menuLabel": "Home"
+    },
+    "about.html": {
+        "pageTitle": "About",
+        "menuLabel": "About Us"
+    },
+    "blog": {
+        "pageTitle": "Blog",
+        "menuLabel": "Blog"
+    }
+}

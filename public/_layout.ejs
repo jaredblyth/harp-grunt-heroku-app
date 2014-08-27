@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title><%= pageTitle %> - <%= title %></title>
+	<!-- build:css({.tmp,www}) /css/combined.min.css -->
+    <link rel="stylesheet" href="/css/main.css" />
+	<link rel="stylesheet" href="/css/default.css" />
+	<!-- endbuild -->
+  </head>
+  <body>
+      <div class="container">
+        <%- partial("_partials/_header") %>
+        <%- yield %>
+      </div>
+	 
+	<script src="/bower_components/jquery/jquery.min.js"></script>
+	
+	<!-- build:js({.tmp,www}) /scripts/scripts.min.js -->
+	<script src="/scripts/test1.js"></script>
+	<script src="/scripts/test2.js"></script>
+	<!-- endbuild -->
+	
+	<script>
+		$( document ).ready(function() {
+			$( '.sass' ).click(function() {
+			alert('jquery is working');
+			});
+		});
+	  </script>
+	  
+  </body>
+</html>
